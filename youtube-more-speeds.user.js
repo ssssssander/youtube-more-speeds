@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube More Speeds
 // @namespace    https://github.com/ssssssander
-// @version      1.0
+// @version      1.1
 // @icon https://www.youtube.com/s/desktop/3748dff5/img/favicon_48.png
 // @description  Adds buttons under a YouTube video with more playback speeds.
 // @author       ssssssander
@@ -10,6 +10,7 @@
 // @supportURL https://github.com/ssssssander/youtube-more-speeds/issues
 // @match        *://*.youtube.com/*
 // @require https://greasyfork.org/scripts/398990-waitforkeyelementsvanilla/code/waitForKeyElementsVanilla.js?version=785857
+// @license MIT
 // ==/UserScript==
 
 // https://stackoverflow.com/questions/34077641/how-to-detect-page-navigation-on-youtube-and-modify-its-appearance-seamlessly
