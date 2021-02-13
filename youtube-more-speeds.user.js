@@ -9,7 +9,7 @@
 // @downloadURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @supportURL https://github.com/ssssssander/youtube-more-speeds/issues
 // @match        *://*.youtube.com/*
-// @require      https://gist.githubusercontent.com/mjblay/18d34d861e981b7785e407c3b443b99b/raw/debc0e6d4d537ac228d1d71f44b1162979a5278c/waitForKeyElements.js
+// @require https://greasyfork.org/scripts/398990-waitforkeyelementsvanilla/code/waitForKeyElementsVanilla.js?version=785857
 // ==/UserScript==
 
 // https://stackoverflow.com/questions/34077641/how-to-detect-page-navigation-on-youtube-and-modify-its-appearance-seamlessly
@@ -25,11 +25,8 @@
     if (document.body) {
         waitForKeyElements(titleElemSelector, addSpeeds); // eslint-disable-line no-undef
     }
-    else {
-        document.addEventListener('DOMContentLoaded', addSpeeds);
-    }
 
-    function addSpeeds(titleElem) {
+    function addSpeeds() {
         let bgColor = colors[0];
         let div = document.createElement('div');
 
@@ -50,6 +47,6 @@
             div.appendChild(btn)
         }
 
-        titleElem.appendChild(div);
+        document.querySelector(titleElemSelector).appendChild(div);
     }
 })();
