@@ -48,9 +48,6 @@
 // @name:el YouTube Περισσότερες ταχύτητες
 // @description:el Προσθέτει κουμπιά κάτω από ένα βίντεο στο YouTube με περισσότερες ταχύτητες αναπαραγωγής.
 
-// @name:en YouTube More Speeds
-// @description:en Adds buttons under a YouTube video with more playback speeds.
-
 // @name:eo YouTube Pli Rapidoj
 // @description:eo Aldonas butonojn sub Youtube video kun pli reprodukto rapidoj.
 
