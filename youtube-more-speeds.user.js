@@ -1,9 +1,10 @@
 // ==UserScript==
+// @version      1.2
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
 // @name:af YouTube Meer Spoed
-// @description:af Voeg knoppies onder 'n YouTube-video met meer afspeel spoed.
+// @description:af Voeg knoppies onder 'n YouTube-video by met meer afspeel spoed.
 
 // @name:am የ YouTube ተጨማሪ ፍጥነት
 // @description:am ተጨማሪ ማጫወት ፍጥነት ጋር የ YouTube ቪዲዮ በታች አዝራሮች ያክላል.
@@ -189,7 +190,7 @@
 // @description:ne अन्तर्गत थप प्लेब्याक गति संग YouTube भिडियो बटन थप्छ।
 
 // @name:nl YouTube Meer Snelheden
-// @description:nl Voegt knoppen onder een YouTube-video met meer afspeelsnelheden.
+// @description:nl Voegt knoppen onder een YouTube-video toe met meer afspeelsnelheden.
 
 // @name:no YouTube Flere Hastigheter
 // @description:no Legger knappene under en YouTube-video med flere avspillingshastigheter.
@@ -309,7 +310,6 @@
 // @description:zu Yengeza izinkinobho ngaphansi kwevidiyo ye-YouTube nge ngaphezulu ukudlala ngesivinini.
 
 // @namespace    https://github.com/ssssssander
-// @version      1.1
 // @icon https://www.youtube.com/s/desktop/3748dff5/img/favicon_48.png
 // @author       ssssssander
 // @homepage https://github.com/ssssssander/youtube-more-speeds
@@ -326,17 +326,18 @@
 (function() {
     'use strict';
 
-    const titleElemSelector = '.title.style-scope.ytd-video-primary-info-renderer';
+    const infoElemSelector = '#info.style-scope.ytd-video-primary-info-renderer';
     const colors = ['#072525', '#287F54', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
     window.addEventListener('yt-navigate-start', addSpeeds);
 
     if (document.body) {
-        waitForKeyElements(titleElemSelector, addSpeeds); // eslint-disable-line no-undef
+        waitForKeyElements(infoElemSelector, addSpeeds); // eslint-disable-line no-undef
     }
 
     function addSpeeds() {
         let bgColor = colors[0];
-        let div = document.createElement('div');
+        let moreSpeedsDiv = document.createElement('div');
+        moreSpeedsDiv.id = 'more-speeds';
 
         for (let i = 0.25; i < 16; i += .25) {
             if (i >= 1) { bgColor = colors[1]; }
@@ -344,17 +345,18 @@
             if (i > 4) { i ++; bgColor = colors[2]; }
 
             let btn = document.createElement('button');
-            btn.style.marginRight = '4px';
-            btn.style.border = '1px solid lightgrey';
-            btn.style.borderRadius = '2px';
-            btn.style.color = 'white';
             btn.style.backgroundColor = bgColor;
+            btn.style.marginRight = '4px';
+            btn.style.border = '1px solid #D3D3D3';
+            btn.style.borderRadius = '2px';
+            btn.style.color = '#ffffff';
             btn.style.cursor = 'pointer';
             btn.textContent = '×' + (i.toString().substr(0, 1) == '0' ? i.toString().substr(1): i.toString());
             btn.addEventListener('click', () => { document.getElementsByTagName('video')[0].playbackRate = i } );
-            div.appendChild(btn)
+            moreSpeedsDiv.appendChild(btn);
         }
-
-        document.querySelector(titleElemSelector).appendChild(div);
+        
+        let infoElem = document.querySelector(infoElemSelector);
+        infoElem.parentElement.insertBefore(moreSpeedsDiv, infoElem);
     }
 })();
