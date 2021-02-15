@@ -1,10 +1,10 @@
 // ==UserScript==
-// @version      1.3
+// @version      1.3.1
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
 // @name:af YouTube Meer Spoed
-// @description:af Voeg knoppies onder 'n YouTube-video met meer afspeel spoed.
+// @description:af Voeg knoppies onder 'n YouTube-video by met meer afspeel spoed.
 
 // @name:am የ YouTube ተጨማሪ ፍጥነት
 // @description:am ተጨማሪ ማጫወት ፍጥነት ጋር የ YouTube ቪዲዮ በታች አዝራሮች ያክላል.
@@ -187,7 +187,7 @@
 // @description:ne अन्तर्गत थप प्लेब्याक गति संग YouTube भिडियो बटन थप्छ।
 
 // @name:nl YouTube Meer Snelheden
-// @description:nl Voegt knoppen onder een YouTube-video met meer afspeelsnelheden.
+// @description:nl Voegt knoppen onder een YouTube-video toe met meer afspeelsnelheden.
 
 // @name:no YouTube Flere Hastigheter
 // @description:no Legger knappene under en YouTube-video med flere avspillingshastigheter.
