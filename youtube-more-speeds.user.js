@@ -1,10 +1,10 @@
 // ==UserScript==
-// @version      1.2
+// @version      1.3
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
 // @name:af YouTube Meer Spoed
-// @description:af Voeg knoppies onder 'n YouTube-video by met meer afspeel spoed.
+// @description:af Voeg knoppies onder 'n YouTube-video met meer afspeel spoed.
 
 // @name:am የ YouTube ተጨማሪ ፍጥነት
 // @description:am ተጨማሪ ማጫወት ፍጥነት ጋር የ YouTube ቪዲዮ በታች አዝራሮች ያክላል.
@@ -47,6 +47,9 @@
 
 // @name:el YouTube Περισσότερες ταχύτητες
 // @description:el Προσθέτει κουμπιά κάτω από ένα βίντεο στο YouTube με περισσότερες ταχύτητες αναπαραγωγής.
+
+// @name:en YouTube More Speeds
+// @description:en Adds buttons under a YouTube video with more playback speeds.
 
 // @name:eo YouTube Pli Rapidoj
 // @description:eo Aldonas butonojn sub Youtube video kun pli reprodukto rapidoj.
@@ -187,7 +190,7 @@
 // @description:ne अन्तर्गत थप प्लेब्याक गति संग YouTube भिडियो बटन थप्छ।
 
 // @name:nl YouTube Meer Snelheden
-// @description:nl Voegt knoppen onder een YouTube-video toe met meer afspeelsnelheden.
+// @description:nl Voegt knoppen onder een YouTube-video met meer afspeelsnelheden.
 
 // @name:no YouTube Flere Hastigheter
 // @description:no Legger knappene under en YouTube-video med flere avspillingshastigheter.
@@ -323,15 +326,18 @@
 (function() {
     'use strict';
 
+    let funcDone = false;
     const infoElemSelector = '#info.style-scope.ytd-video-primary-info-renderer';
     const colors = ['#072525', '#287F54', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
-    window.addEventListener('yt-navigate-start', addSpeeds);
+    if (!funcDone) window.addEventListener('yt-navigate-start', addSpeeds);
 
-    if (document.body) {
+    if (document.body && !funcDone) {
         waitForKeyElements(infoElemSelector, addSpeeds); // eslint-disable-line no-undef
     }
 
     function addSpeeds() {
+        if (funcDone) return;
+
         let bgColor = colors[0];
         let moreSpeedsDiv = document.createElement('div');
         moreSpeedsDiv.id = 'more-speeds';
@@ -352,8 +358,10 @@
             btn.addEventListener('click', () => { document.getElementsByTagName('video')[0].playbackRate = i } );
             moreSpeedsDiv.appendChild(btn);
         }
-        
+
         let infoElem = document.querySelector(infoElemSelector);
         infoElem.parentElement.insertBefore(moreSpeedsDiv, infoElem);
+
+        funcDone = true;
     }
 })();
