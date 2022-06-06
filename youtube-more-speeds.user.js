@@ -310,6 +310,7 @@
 // @icon https://www.youtube.com/s/desktop/3748dff5/img/favicon_48.png
 // @author       ssssssander
 // @homepage https://github.com/ssssssander/youtube-more-speeds
+// @updateURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @downloadURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @supportURL https://github.com/ssssssander/youtube-more-speeds/issues
 // @match        *://*.youtube.com/*
