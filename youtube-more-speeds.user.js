@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version      1.3.1
+// @version      1.4
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
@@ -313,7 +313,7 @@
 // @downloadURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @supportURL https://github.com/ssssssander/youtube-more-speeds/issues
 // @match        *://*.youtube.com/*
-// @require https://greasyfork.org/scripts/398990-waitforkeyelementsvanilla/code/waitForKeyElementsVanilla.js?version=785857
+// @require https://cdn.jsdelivr.net/gh/CoeJoder/waitForKeyElements.js@v1.2/waitForKeyElements.js
 // @license MIT
 // ==/UserScript==
 
@@ -324,7 +324,7 @@
     'use strict';
 
     let funcDone = false;
-    const infoElemSelector = '#info.style-scope.ytd-video-primary-info-renderer';
+    const infoElemSelector = '#description-and-actions';
     const colors = ['#072525', '#287F54', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
     if (!funcDone) window.addEventListener('yt-navigate-start', addSpeeds);
 
