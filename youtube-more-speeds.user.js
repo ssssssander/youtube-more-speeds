@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version      1.4
+// @version      1.4.1
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
@@ -306,15 +306,15 @@
 // @name:zu Ngesivinini-YouTube angeziwe
 // @description:zu Yengeza izinkinobho ngaphansi kwevidiyo ye-YouTube nge ngaphezulu ukudlala ngesivinini.
 
-// @namespace    https://github.com/ssssssander
+// @namespace https://github.com/ssssssander
 // @icon https://www.youtube.com/s/desktop/3748dff5/img/favicon_48.png
-// @author       ssssssander
+// @author ssssssander
 // @homepage https://github.com/ssssssander/youtube-more-speeds
 // @updateURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @downloadURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @supportURL https://github.com/ssssssander/youtube-more-speeds/issues
-// @match        *://*.youtube.com/*
-// @require https://cdn.jsdelivr.net/gh/CoeJoder/waitForKeyElements.js@v1.2/waitForKeyElements.js
+// @match *://*.youtube.com/*
+// @require https://greasyfork.org/scripts/446257-waitforkeyelements-utility-function/code/waitForKeyElements%20utility%20function.js?version=1059316
 // @license MIT
 // ==/UserScript==
 
@@ -325,7 +325,7 @@
     'use strict';
 
     let funcDone = false;
-    const infoElemSelector = '#description-and-actions';
+    const infoElemSelector = 'div#info.style-scope.ytd-video-primary-info-renderer';
     const colors = ['#072525', '#287F54', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
     if (!funcDone) window.addEventListener('yt-navigate-start', addSpeeds);
 
