@@ -27,7 +27,7 @@
     let funcDone = false;
     // hidden in new layout  const infoElemSelector = 'div#info.style-scope.ytd-video-primary-info-renderer';
     const infoElemSelector = 'div#top-row.style-scope.ytd-watch-metadata';
-    const colors = ['#072525', '#287F54', '#E97451', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
+    const colors = ['#072525', '#287F54', 'ED561F', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
     if (!funcDone) window.addEventListener('yt-navigate-start', addSpeeds);
 
     if (document.body && !funcDone) {
