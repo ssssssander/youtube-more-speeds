@@ -328,7 +328,7 @@
     let funcDone = false;
     // hidden in new layout  const infoElemSelector = 'div#info.style-scope.ytd-video-primary-info-renderer';
     const infoElemSelector = 'div#top-row.style-scope.ytd-watch-metadata';
-    const colors = ['#072525', '#287F54', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
+    const colors = ['#072525', '#287F54', '#ED561F', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
     if (!funcDone) window.addEventListener('yt-navigate-start', addSpeeds);
 
     if (document.body && !funcDone) {
@@ -342,10 +342,10 @@
         let moreSpeedsDiv = document.createElement('div');
         moreSpeedsDiv.id = 'more-speeds';
 
-        for (let i = 0.25; i < 16; i += .25) {
+         for (let i = 0.25; i < 16; i += .25) {
             if (i >= 1) { bgColor = colors[1]; }
-            if (i > 1) { i += .75; }
-            if (i > 4) { i ++; bgColor = colors[2]; }
+            if (i > 2) { i += 0.75; bgColor = colors[2]; }
+            if (i > 6) { i += 4; bgColor = colors[3]; }
 
             let btn = document.createElement('button');
             btn.style.backgroundColor = bgColor;
