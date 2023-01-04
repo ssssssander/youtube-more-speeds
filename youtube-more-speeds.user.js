@@ -326,7 +326,8 @@
 
    let funcDone = false;
    const infoElemSelector = "div#top-row.style-scope.ytd-watch-metadata";
-   const colors = ["#072525", "#287F54", "#C22544"]; // https://www.schemecolor.com/wedding-in-india.php
+   const bgColors = ["#605CB8", "#53C292", "#E64640"]; // https://www.schemecolor.com/colors-brighten-thoughts.php
+   const colors = ["#FFFFFF", "#000000"];
    if (!funcDone) window.addEventListener("yt-navigate-finish", addSpeeds);
 
    if (document.body && !funcDone) {
@@ -336,28 +337,31 @@
    function addSpeeds() {
       if (funcDone) return;
 
-      let bgColor = colors[0];
+      let bgColor = bgColors[0];
+      let color = colors[0];
       let moreSpeedsDiv = document.createElement("div");
       moreSpeedsDiv.id = "more-speeds";
 
       for (let i = 0.25; i < 16; i += 0.25) {
          if (i >= 1) {
-            bgColor = colors[1];
+            bgColor = bgColors[1];
+            color = colors[1];
          }
          if (i > 1) {
             i += 0.75;
          }
          if (i > 4) {
             i++;
-            bgColor = colors[2];
+            bgColor = bgColors[2];
+            color = colors[0];
          }
 
          let btn = document.createElement("button");
          btn.style.backgroundColor = bgColor;
+         btn.style.color = color;
          btn.style.marginRight = "4px";
-         btn.style.border = "1px solid #D3D3D3";
-         btn.style.borderRadius = "2px";
-         btn.style.color = "#ffffff";
+         btn.style.border = "2px solid #D3D3D3";
+         btn.style.borderRadius = "8px";
          btn.style.cursor = "pointer";
          btn.textContent =
             "×" + (i.toString().substr(0, 1) == "0" ? i.toString().substr(1) : i.toString());
