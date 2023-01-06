@@ -361,7 +361,7 @@
          btn.style.color = color;
          btn.style.marginRight = "4px";
          btn.style.border = "2px solid #D3D3D3";
-         btn.style.borderRadius = "8px";
+         btn.style.borderRadius = "16px";
          btn.style.cursor = "pointer";
          btn.textContent =
             "×" + (i.toString().substr(0, 1) == "0" ? i.toString().substr(1) : i.toString());
