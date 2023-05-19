@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version      1.4.2
+// @version      1.5
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
@@ -322,58 +322,46 @@
 // https://stackoverflow.com/questions/19238791/how-to-use-waitforkeyelements-to-display-information-after-select-images
 
 (function () {
-   "use strict";
+    "use strict";
+    const infoElemSelector = "div#top-row.style-scope.ytd-watch-metadata";
+    const bgColors = ["#89b4fa", "#a6e3a1", "#f38ba8"]; //https://github.com/catppuccin/catppuccin#-palette
+    const fgColor = "#000000";
+    let funcDone = false;
+    if (!funcDone) window.addEventListener("yt-navigate-finish", addSpeeds);
+    if (document.body && !funcDone) waitForKeyElements(infoElemSelector, addSpeeds);
 
-   let funcDone = false;
-   const infoElemSelector = "div#top-row.style-scope.ytd-watch-metadata";
-   const bgColors = ["#605CB8", "#53C292", "#E64640"]; // https://www.schemecolor.com/colors-brighten-thoughts.php
-   const colors = ["#FFFFFF", "#000000"];
-   if (!funcDone) window.addEventListener("yt-navigate-finish", addSpeeds);
+    function addSpeeds() {
 
-   if (document.body && !funcDone) {
-      waitForKeyElements(infoElemSelector, addSpeeds); // eslint-disable-line no-undef
-   }
+        if (funcDone) return;
+        const moreSpeedsDiv = document.createElement("div");
+        moreSpeedsDiv.id = "more-speeds";
 
-   function addSpeeds() {
-      if (funcDone) return;
+        for (let i = 0.25; i < 16; i += 0.25) {
+            let bgColor;
 
-      let bgColor = bgColors[0];
-      let color = colors[0];
-      let moreSpeedsDiv = document.createElement("div");
-      moreSpeedsDiv.id = "more-speeds";
-
-      for (let i = 0.25; i < 16; i += 0.25) {
-         if (i >= 1) {
-            bgColor = bgColors[1];
-            color = colors[1];
-         }
-         if (i > 1) {
-            i += 0.75;
-         }
-         if (i > 4) {
-            i++;
-            bgColor = bgColors[2];
-            color = colors[0];
-         }
-
-         let btn = document.createElement("button");
-         btn.style.backgroundColor = bgColor;
-         btn.style.color = color;
-         btn.style.marginRight = "4px";
-         btn.style.border = "2px solid #D3D3D3";
-         btn.style.borderRadius = "16px";
-         btn.style.cursor = "pointer";
-         btn.textContent =
-            "×" + (i.toString().substr(0, 1) == "0" ? i.toString().substr(1) : i.toString());
-         btn.addEventListener("click", () => {
-            document.getElementsByTagName("video")[0].playbackRate = i;
-         });
-         moreSpeedsDiv.appendChild(btn);
-      }
-
-      let infoElem = document.querySelector(infoElemSelector);
-      infoElem.parentElement.insertBefore(moreSpeedsDiv, infoElem);
-
-      funcDone = true;
-   }
+            if (i <= 1) {
+                bgColor = bgColors[i | 0];
+            } else if (i > 1 && i <= 4) {
+                bgColor = bgColors[1];
+                i += 0.75;
+            } else {
+                bgColor = bgColors[2];
+                i += 1.75;
+            }
+            let btn = document.createElement("button");
+            btn.style.backgroundColor = bgColor;
+            btn.style.color = fgColor;
+            btn.style.marginRight = "4px";
+            btn.style.border = "2px solid #181825";
+            btn.style.borderRadius = "16px";
+            btn.style.cursor = "pointer";
+            btn.textContent = "×" + (i.toString().startsWith("0") ? i.toString().substring(1) : i);
+            btn.addEventListener("click", () => {
+                document.getElementsByTagName("video")[0].playbackRate = i;
+            });
+            moreSpeedsDiv.appendChild(btn);
+        }
+        document.querySelector(infoElemSelector).parentElement.insertBefore(moreSpeedsDiv, document.querySelector(infoElemSelector));
+        funcDone = true;
+    }
 })();
