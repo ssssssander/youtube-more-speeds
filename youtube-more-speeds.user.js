@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version      1.4
+// @version      1.5
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
