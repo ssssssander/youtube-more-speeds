@@ -1,5 +1,5 @@
 // ==UserScript==
-// @version      1.4.2
+// @version      1.4
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
@@ -306,74 +306,59 @@
 // @name:zu Ngesivinini-YouTube angeziwe
 // @description:zu Yengeza izinkinobho ngaphansi kwevidiyo ye-YouTube nge ngaphezulu ukudlala ngesivinini.
 
-// @namespace https://github.com/ssssssander
+// @namespace    https://github.com/ssssssander
 // @icon https://www.youtube.com/s/desktop/3748dff5/img/favicon_48.png
-// @author ssssssander
+// @author       ssssssander
 // @homepage https://github.com/ssssssander/youtube-more-speeds
-// @updateURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
-// @downloadURL https://raw.githubusercontent.com/ssssssander/youtube-more-speeds/main/youtube-more-speeds.user.js
 // @supportURL https://github.com/ssssssander/youtube-more-speeds/issues
-// @match *://*.youtube.com/*
-// @require https://greasyfork.org/scripts/446257-waitforkeyelements-utility-function/code/waitForKeyElements%20utility%20function.js?version=1059316
+// @match        *://*.youtube.com/*
+// @require https://cdn.jsdelivr.net/gh/CoeJoder/waitForKeyElements.js@v1.2/waitForKeyElements.js
 // @license MIT
 // ==/UserScript==
 
 // https://stackoverflow.com/questions/34077641/how-to-detect-page-navigation-on-youtube-and-modify-its-appearance-seamlessly
 // https://stackoverflow.com/questions/19238791/how-to-use-waitforkeyelements-to-display-information-after-select-images
 
-(function () {
-   "use strict";
+(function() {
+    'use strict';
 
-   let funcDone = false;
-   const infoElemSelector = "div#top-row.style-scope.ytd-watch-metadata";
-   const bgColors = ["#605CB8", "#53C292", "#E64640"]; // https://www.schemecolor.com/colors-brighten-thoughts.php
-   const colors = ["#FFFFFF", "#000000"];
-   if (!funcDone) window.addEventListener("yt-navigate-finish", addSpeeds);
+    let funcDone = false;
+    const titleElemSelector = 'div#title.style-scope.ytd-watch-metadata';
+    const colors = ['#072525', '#287F54', '#C22544']; // https://www.schemecolor.com/wedding-in-india.php
+    if (!funcDone) window.addEventListener('yt-navigate-start', addSpeeds);
 
-   if (document.body && !funcDone) {
-      waitForKeyElements(infoElemSelector, addSpeeds); // eslint-disable-line no-undef
-   }
+    if (document.body && !funcDone) {
+        waitForKeyElements(titleElemSelector, addSpeeds); // eslint-disable-line no-undef
+    }
 
-   function addSpeeds() {
-      if (funcDone) return;
+    function addSpeeds() {
+        if (funcDone) return;
 
-      let bgColor = bgColors[0];
-      let color = colors[0];
-      let moreSpeedsDiv = document.createElement("div");
-      moreSpeedsDiv.id = "more-speeds";
+        let bgColor = colors[0];
+        let moreSpeedsDiv = document.createElement('div');
+        moreSpeedsDiv.id = 'more-speeds';
 
-      for (let i = 0.25; i < 16; i += 0.25) {
-         if (i >= 1) {
-            bgColor = bgColors[1];
-            color = colors[1];
-         }
-         if (i > 1) {
-            i += 0.75;
-         }
-         if (i > 4) {
-            i++;
-            bgColor = bgColors[2];
-            color = colors[0];
-         }
+        for (let i = 0.25; i < 16; i +=.25) {
+            if (i >= 1) { bgColor = colors[1]; }
+            if (i > 4) { i+=.75; }
+            if (i > 8) { i++; bgColor = colors[2]; }
 
-         let btn = document.createElement("button");
-         btn.style.backgroundColor = bgColor;
-         btn.style.color = color;
-         btn.style.marginRight = "4px";
-         btn.style.border = "2px solid #D3D3D3";
-         btn.style.borderRadius = "16px";
-         btn.style.cursor = "pointer";
-         btn.textContent =
-            "×" + (i.toString().substr(0, 1) == "0" ? i.toString().substr(1) : i.toString());
-         btn.addEventListener("click", () => {
-            document.getElementsByTagName("video")[0].playbackRate = i;
-         });
-         moreSpeedsDiv.appendChild(btn);
-      }
+            let btn = document.createElement('button');
+            btn.style.backgroundColor = bgColor;
+            btn.style.marginRight = '4px';
+            btn.style.border = '1px solid #D3D3D3';
+            btn.style.borderRadius = '2px';
+            btn.style.color = '#ffffff';
+            btn.style.cursor = 'pointer';
+            btn.style.fontFamily = 'monospace';
+            btn.textContent = '×' + (i.toString().substr(0, 1) == '0' ? i.toString().substr(1): i.toString());
+            btn.addEventListener('click', () => { document.getElementsByTagName('video')[0].playbackRate = i } );
+            moreSpeedsDiv.appendChild(btn);
+        }
 
-      let infoElem = document.querySelector(infoElemSelector);
-      infoElem.parentElement.insertBefore(moreSpeedsDiv, infoElem);
+        let titleElem = document.querySelector(titleElemSelector);
+        titleElem.after(moreSpeedsDiv);
 
-      funcDone = true;
-   }
+        funcDone = true;
+    }
 })();
