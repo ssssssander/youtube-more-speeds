@@ -1,310 +1,313 @@
 // ==UserScript==
-// @version      1.5.1
+// @version      1.5.2
 // @name         YouTube More Speeds
 // @description  Adds buttons under a YouTube video with more playback speeds.
 
-// @name:af YouTube Meer Spoed
-// @description:af Voeg knoppies onder 'n YouTube-video by met meer afspeel spoed.
+// @name:af YouTube Meer Spoed (2026 werk)
+// @description:af Voeg knoppies onder 'n YouTube-video by met meer terugspeelsnelhede.
 
-// @name:am የ YouTube ተጨማሪ ፍጥነት
-// @description:am ተጨማሪ ማጫወት ፍጥነት ጋር የ YouTube ቪዲዮ በታች አዝራሮች ያክላል.
+// @name:am የዩቲዩብ ተጨማሪ ፍጥነት (በ2026 እየሰራ)
+// @description:am በYouTube ቪዲዮ ስር ተጨማሪ የመልሶ ማጫወት ፍጥነት ያላቸውን አዝራሮች ያክላል።
 
-// @name:ar يوتيوب عن السرعات
-// @description:ar ويضيف أزرار تحت شريط فيديو YouTube بمزيد من سرعات التشغيل.
+// @name:ar سرعات يوتيوب أكثر (2026 سرعة عاملة)
+// @description:ar يضيف أزرارًا أسفل فيديو يوتيوب مع سرعات تشغيل أكثر.
 
-// @name:az YouTube Daha Xızı
-// @description:az daha playback sürəti ilə bir YouTube video altında düymələri edər.
+// @name:az YouTube Daha Çox Sürət (2026-cı ildə işləyir)
+// @description:az Daha çox oxutma sürəti ilə YouTube videosunun altına düymələr əlavə edir.
 
-// @name:be YouTube Больш Паскарае
-// @description:be Дадае кнопкі пад відэа на YouTube з больш хуткасцю прайгравання.
+// @name:be YouTube More Speeds (працуе з 2026 года)
+// @description:be Дадае кнопкі пад відэа на YouTube з большай хуткасцю прайгравання.
 
-// @name:bg YouTube Повече Скорости
-// @description:bg Добавя бутони под видео YouTube с повече скорост на възпроизвеждане.
+// @name:bg YouTube More Speeds (работи от 2026 г.)
+// @description:bg Добавя бутони под видеоклип в YouTube с по-високи скорости на възпроизвеждане.
 
-// @name:bn YouTube কে আরও গতি
-// @description:bn আরো প্লেব্যাক গতি সঙ্গে একটি YouTube ভিডিও অধীনে বোতাম যোগ করে।
+// @name:bn ইউটিউব আরও গতি (২০২৬ কার্যকরী)
+// @description:bn ইউটিউব ভিডিওর নিচে আরও দ্রুত প্লেব্যাকের জন্য বাটন যোগ করে।
 
-// @name:bs YouTube Više Brzine
-// @description:bs Dodaje tipke ispod YouTube video s više brzina reprodukcije.
+// @name:bs YouTube Više Brzina (2026. radi)
+// @description:bs Dodaje dugmad ispod YouTube videa s većim brzinama reprodukcije.
 
-// @name:ca YouTube Més terminis d'enviament
-// @description:ca Afegeix botons sota d'un vídeo de YouTube amb més velocitats de reproducció.
+// @name:ca YouTube Més Velocitats (funciona el 2026)
+// @description:ca Afegeix botons sota un vídeo de YouTube amb més velocitats de reproducció.
 
-// @name:co YouTube More acceleratu
-// @description:co Aghjusta buttoni sottu una Video YouTube cù di più ùn mettite italiani.
+// @name:co YouTube Più Velocità (2026 funziunale)
+// @description:co Aghjusta buttoni sottu à un video YouTube cù più velocità di riproduzione.
 
-// @name:cs YouTube Další Rychlosti
-// @description:cs Přidá tlačítek pod videem na YouTube s více rychlostí přehrávání.
+// @name:cs YouTube s vyšší rychlostí (v provozu od roku 2026)
+// @description:cs Přidá tlačítka pod video na YouTube s vyšší rychlostí přehrávání.
 
-// @name:cy YouTube Mwy Speeds
-// @description:cy Ychwanegu botymau dan fideo YouTube gyda mwy o gyflymder playback.
+// @name:cy YouTube More Speeds (2026 yn gweithio)
+// @description:cy Yn ychwanegu botymau o dan fideo YouTube gyda chyflymderau chwarae mwy.
 
-// @name:da YouTube Flere Hastigheder
-// @description:da Tilføjer knapper under en YouTube-video med flere afspilningshastigheder.
+// @name:da YouTube More Speeds (i drift 2026)
+// @description:da Tilføjer knapper under en YouTube-video med højere afspilningshastigheder.
 
-// @name:de YouTube Mehr Geschwindigkeiten
-// @description:de Fügt Schaltflächen unter einem YouTube-Video mit mehr Wiedergabegeschwindigkeiten.
+// @name:de YouTube – Höhere Geschwindigkeiten (funktioniert ab 2026)
+// @description:de Fügt unter einem YouTube-Video Schaltflächen mit mehr Wiedergabegeschwindigkeiten hinzu.
 
-// @name:el YouTube Περισσότερες ταχύτητες
-// @description:el Προσθέτει κουμπιά κάτω από ένα βίντεο στο YouTube με περισσότερες ταχύτητες αναπαραγωγής.
+// @name:el YouTube Περισσότερες Ταχύτητες (Λειτουργεί από το 2026)
+// @description:el Προσθέτει κουμπιά κάτω από ένα βίντεο YouTube με μεγαλύτερες ταχύτητες αναπαραγωγής.
 
-// @name:eo YouTube Pli Rapidoj
-// @description:eo Aldonas butonojn sub Youtube video kun pli reprodukto rapidoj.
+// @name:en YouTube More Speeds (2026 working)
+// @description:en Adds buttons under a YouTube video with more playback speeds.
 
-// @name:es YouTube Más plazos de envío
-// @description:es Añade botones debajo de un vídeo de YouTube con más velocidades de reproducción.
+// @name:eo YouTube Pli Rapidaj (funkciante en 2026)
+// @description:eo Aldonas butonojn sub YouTube-video kun pli da reludigrapidoj.
 
-// @name:et YouTube Rohkem Kiirused
-// @description:et Lisab nuppe all YouTube video rohkem taasesituse kiirust.
+// @name:es YouTube Más velocidades (funciona en 2026)
+// @description:es Agrega botones debajo de un video de YouTube con más velocidades de reproducción.
 
-// @name:eu YouTube abiadura gehiago
-// @description:eu Gehitzen botoiak YouTube bideo bat erreprodukzioa abiadura gehiagorekin azpian.
+// @name:et YouTube'i kiiremad versioonid (töötab 2026. aastal)
+// @description:et Lisab YouTube'i video alla nupud, mis suurendavad taasesituse kiirust.
 
-// @name:fa یوتیوب سرعت بیشتر
-// @description:fa می افزاید دکمه زیر ویدیو یوتیوب با سرعت پخش است.
+// @name:eu YouTube Abiadura Gehiago (2026an lanean)
+// @description:eu YouTube bideo baten azpian botoiak gehitzen ditu erreprodukzio-abiadura handiagoarekin.
 
-// @name:fi YouTube Enemmän Nopeudet
-// @description:fi Lisää painikkeita alle YouTube-videota enemmän hakunopeutta.
+// @name:fa سرعت بیشتر یوتیوب (۲۰۲۶ سرعت فعال)
+// @description:fa دکمه‌هایی را زیر ویدیوهای یوتیوب با سرعت پخش بیشتر اضافه می‌کند.
 
-// @name:fr YouTube Plus de délais
-// @description:fr Ajoute des boutons sous une vidéo YouTube avec plus de vitesse de lecture.
+// @name:fi YouTube Lisää nopeuksia (toimii vuonna 2026)
+// @description:fi Lisää YouTube-videon alle painikkeita, jotka nopeuttavat toistoa.
 
-// @name:fy YouTube More speeds
-// @description:fy Foeget knoppen ûnder in YouTube video mei mear Wiedergabe faasjes.
+// @name:fr YouTube Plus de vitesses (2026 fonctionnelles)
+// @description:fr Ajoute des boutons sous une vidéo YouTube permettant d'accéder à différentes vitesses de lecture.
 
-// @name:ga YouTube More Luasanna
-// @description:ga Cuir cnaipí faoi físeán YouTube le luasanna athsheinm níos mó.
+// @name:fy YouTube More Speeds (2026 wurket)
+// @description:fy Foeget knoppen ta ûnder in YouTube-fideo mei mear ôfspielsnelheden.
 
-// @name:gd YouTube Tuilleadh astaran
-// @description:gd Putanan cur fo YouTube bhidio le barrachd playback astaran.
+// @name:ga YouTube More Speeds (ag obair 2026)
+// @description:ga Cuireann sé cnaipí faoi fhíseán YouTube le luasanna athsheinm níos airde.
 
-// @name:gl YouTube máis velocidades
-// @description:gl Engade botóns debaixo dun vídeo de YouTube con máis velocidade de reprodución.
+// @name:gd YouTube More Speeds (ag obair ann an 2026)
+// @description:gd Cuiridh e putanan fo bhidio YouTube le barrachd astaran ath-chluich.
 
-// @name:gu YouTube ને વધુ ગતિ
-// @description:gu વધુ પ્લેબેક ઝડપ સાથે YouTube વિડિઓ હેઠળ બટનો ઉમેરે છે.
+// @name:gl YouTube Máis Velocidades (funcionando en 2026)
+// @description:gl Engade botóns debaixo dun vídeo de YouTube con máis velocidades de reprodución.
 
-// @name:ha YouTube More gudu
-// @description:ha Yana ƙara mashiga a karkashin wani YouTube video da more sake kunnawa gudu.
+// @name:gu YouTube મોર સ્પીડ (2026 કાર્યરત)
+// @description:gu વધુ પ્લેબેક ગતિવાળા YouTube વિડિઓ હેઠળ બટનો ઉમેરે છે.
 
-// @name:hi यूट्यूब अधिक गति
-// @description:hi अधिक प्लेबैक गति के साथ एक यूट्यूब वीडियो के तहत बटन जोड़ता है।
+// @name:ha YouTube Ƙarin Sauri (2026 yana aiki)
+// @description:ha Yana ƙara maɓallan a ƙarƙashin bidiyon YouTube tare da ƙarin saurin sake kunnawa.
 
-// @name:hr YouTube više brzina
-// @description:hr Dodaje gumbiće pod YouTube video s više brzina reprodukcije.
+// @name:hi YouTube की स्पीड बढ़ाने के लिए (2026 तक काम जारी)
+// @description:hi यह YouTube वीडियो के नीचे अधिक प्लेबैक गति वाले बटन जोड़ता है।
 
-// @name:ht YouTube Plis vitès
-// @description:ht Ajoute bouton anba yon videyo YouTube ki gen plis vitès lèktur.
+// @name:hr YouTube More Speeds (u funkciji 2026.)
+// @description:hr Dodaje gumbe ispod YouTube videa s većim brzinama reprodukcije.
 
-// @name:hu YouTube több fokozat
-// @description:hu Hozzáteszi gombok alatt egy YouTube videót, több lejátszási sebesség.
+// @name:ht YouTube Plis Vitès (ap travay depi 2026)
+// @description:ht Ajoute bouton anba yon videyo YouTube ak plis vitès lekti.
 
-// @name:hy YouTube Լրացուցիչ արագությունների
-// @description:hy Ավելացնում է կոճակներ տակ YouTube տեսանյութի հետ ավելի նվագարկումը արագությամբ:
+// @name:hu YouTube Több Sebesség (2026-tól működik)
+// @description:hu Gombokat ad hozzá egy YouTube-videó alá, gyorsabb lejátszást biztosítva.
 
-// @name:id YouTube Kecepatan Lebih
-// @description:id Menambahkan tombol di bawah video YouTube dengan kecepatan pemutaran lebih.
+// @name:hy YouTube-ի ավելի շատ արագություններ (աշխատում է 2026 թվականին)
+// @description:hy Ավելացնում է կոճակներ YouTube տեսանյութի տակ՝ ավելի մեծ վերարտադրման արագությամբ։
 
-// @name:ig YouTube More gbapụrụ ọsọ
-// @description:ig Na-agbakwụnye, mkpọchi n'okpuru a YouTube video na ihe playback gbapụrụ ọsọ.
+// @name:id YouTube More Speeds (2026 working)
+// @description:id Menambahkan tombol di bawah video YouTube dengan lebih banyak pilihan kecepatan pemutaran.
 
-// @name:is YouTube Fleiri Hraðbátur
-// @description:is Bætir hnappana undir YouTube vídeó með fleiri spilun hraða.
+// @name:ig Ọsọ YouTube Ọzọ (2026 na-arụ ọrụ)
+// @description:ig Na-agbakwụnye bọtịnụ n'okpuru vidiyo YouTube yana ọsọ ọkpụkpọ egwu karịa.
 
-// @name:it YouTube più costi
-// @description:it Aggiunge pulsanti sotto un video di YouTube con più velocità di riproduzione.
+// @name:is YouTube More Speeds (virkar 2026)
+// @description:is Bætir við hnöppum undir YouTube myndbandi með meiri spilunarhraða.
 
-// @name:iw מהירויות נוספות YouTube
-// @description:iw הוספה לחצנים תחת סרטון YouTube עם מהירויות הפעלה נוספות.
+// @name:it YouTube Più velocità (2026 funzionante)
+// @description:it Aggiunge pulsanti sotto un video di YouTube con diverse velocità di riproduzione.
 
-// @name:ja YouTubeでもっとスピード
-// @description:ja より多くの再生速度でYouTubeの動画の下にボタンを追加します。
+// @name:iw YouTube More Speeds (עבודה 2026)
+// @description:iw מוסיף כפתורים מתחת לסרטון יוטיוב עם מהירויות הפעלה גבוהות יותר.
 
-// @name:jw YouTube Kecepatan More
-// @description:jw Nambah tombol ing video YouTube karo kecepatan puter maneh liyane.
+// @name:ja YouTubeの速度向上（2026年開発中）
+// @description:ja YouTube動画の下に、再生速度を選択できるボタンを追加します。
 
-// @name:ka YouTube- ზე სიჩქარეზე
-// @description:ka დასძენს ღილაკები ქვეშ YouTube video უფრო აღწარმოება სიჩქარეზე.
+// @name:jw Kacepetan YouTube Luwih Akeh (2026 wis bisa digunakake)
+// @description:jw Nambahake tombol ing sangisore video YouTube kanthi kecepatan puter maneh sing luwih dhuwur.
 
-// @name:kk YouTube Толығырақ жылдамдығын
-// @description:kk көп ойнату жылдамдықпен бар YouTube бейненің астында түймелерін қосады.
+// @name:ka YouTube-ის მეტი სიჩქარე (2026 წლიდან მუშაობს)
+// @description:ka YouTube ვიდეოს ქვეშ დამატებულია ღილაკები, რომლებიც უფრო მაღალი დაკვრის სიჩქარით ხასიათდება.
 
-// @name:km គេហទំព័រ YouTube ល្បឿនបន្ថែម
-// @description:km បន្ថែមប៊ូតុងនៅក្រោមវីដេអូ YouTube ជាមួយល្បឿនការចាក់សារថ្មីបន្ថែមទៀត។
+// @name:kk YouTube More Speeds (2026 жылы жұмыс істейді)
+// @description:kk YouTube бейнесінің астына ойнату жылдамдығын арттыратын түймелерді қосады.
 
-// @name:kn ಯೂಟ್ಯೂಬ್ ಇನ್ನಷ್ಟು ವೇಗವನ್ನು
-// @description:kn ಹೆಚ್ಚು ಹಿನ್ನೆಲೆ ವೇಗವನ್ನು ಹೊಂದಿರುವ YouTube ವೀಡಿಯೊ ಅಡಿಯಲ್ಲಿ ಗುಂಡಿಗಳು ಸೇರಿಸುತ್ತದೆ.
+// @name:km ល្បឿន YouTube បន្ថែមទៀត (ដំណើរការឆ្នាំ ២០២៦)
+// @description:km បន្ថែមប៊ូតុងនៅក្រោមវីដេអូ YouTube ដែលមានល្បឿនចាក់ឡើងវិញកាន់តែច្រើន។
 
-// @name:ko 유튜브 더 속도
-// @description:ko 더 재생 속도가 YouTube 동영상 아래에 버튼을 추가합니다.
+// @name:kn YouTube ಹೆಚ್ಚಿನ ವೇಗಗಳು (2026 ರಲ್ಲಿ ಕಾರ್ಯನಿರ್ವಹಿಸುತ್ತಿದೆ)
+// @description:kn ಹೆಚ್ಚಿನ ಪ್ಲೇಬ್ಯಾಕ್ ವೇಗದೊಂದಿಗೆ YouTube ವೀಡಿಯೊದ ಅಡಿಯಲ್ಲಿ ಬಟನ್‌ಗಳನ್ನು ಸೇರಿಸುತ್ತದೆ.
 
-// @name:ku YouTube Leza More
-// @description:ku Serkêşiya bişkokên di bin video YouTube bi Leza playback more.
+// @name:ko 유튜브 더 빠른 속도 (2026 작동)
+// @description:ko YouTube 동영상 아래에 재생 속도를 조절할 수 있는 버튼을 추가합니다.
 
-// @name:ky YouTube More ылдамдыгы
-// @description:ky көп ойнотуу ылдамдыгы менен YouTube Video астында баскычтарын кошот.
+// @name:ku Lezên Zêdetir ên YouTube (2026 dixebite)
+// @description:ku Bişkokên di bin vîdyoyek YouTube-ê de bi leza lîstinê ya zêdetir zêde dike.
 
-// @name:la Magis YouTube Speeds
-// @description:la A YouTube video playback, cum magis per adiungit Bullae volo.
+// @name:ky YouTube'дун көбүрөөк ылдамдыктары (2026-жылы иштеп жатат)
+// @description:ky YouTube видеосунун астына көбүрөөк ойнотуу ылдамдыгы менен баскычтарды кошот.
 
-// @name:lo YouTube ຄວາມໄວເພີ່ມເຕີມ
-// @description:lo ເພີ່ມປຸ່ມພາຍໃຕ້ວິດີໂອ YouTube ກັບຄວາມໄວການຫຼິ້ນຫຼາຍ.
+// @name:la YouTube Plures Velocitates (2026 operans)
+// @description:la Addit bullones sub pelliculis YouTube cum celeritatibus reproductionis amplioribus.
 
-// @name:lt YouTube Daugiau Greičiai
-// @description:lt Prideda mygtukus pagal YouTube vaizdo įrašą su daugiau grojimo greitį.
+// @name:lo ຄວາມໄວເພີ່ມເຕີມຂອງ YouTube (2026 ເຮັດວຽກ)
+// @description:lo ເພີ່ມປຸ່ມຢູ່ໃຕ້ວິດີໂອ YouTube ທີ່ມີຄວາມໄວໃນການຫຼິ້ນຫຼາຍຂຶ້ນ.
 
-// @name:lv YouTube Vairāk ātrumi
-// @description:lv Pievieno pogas zem YouTube video ar vairākiem atskaņošanas ātrumu.
+// @name:lt „YouTube“ spartesnis (veikia 2026 m.)
+// @description:lt Prideda mygtukus po „YouTube“ vaizdo įrašu, leidžiančius atkurti greičiau.
 
-// @name:mg YouTube More hafainganam-pandeha
-// @description:mg Manampy bokotra eo ambanin'ny lahatsary YouTube bebe kokoa playback hafainganam-pandeha.
+// @name:lv YouTube vairāk ātrumu (darbojas 2026. gadā)
+// @description:lv Pievieno pogas zem YouTube videoklipa ar lielāku atskaņošanas ātrumu.
 
-// @name:mi YouTube tere atu
-// @description:mi Ka tāpiri pātene i raro i te ataata YouTube ki atu tere purei anō.
+// @name:mg Hafainganam-pandeha bebe kokoa ao amin'ny YouTube (miasa amin'ny taona 2026)
+// @description:mg Manampy bokotra eo ambanin'ny lahatsary YouTube miaraka amin'ny hafainganam-pandehan'ny famerenana bebe kokoa.
 
-// @name:mk YouTube повеќе добива на темпо
-// @description:mk Додава копчиња под видео на YouTube со повеќе брзини на репродукција.
+// @name:mi Ngā Tere Ake a YouTube (kei te mahi i te tau 2026)
+// @description:mi Tāpirihia ngā pātene i raro i tētahi ataata YouTube me ngā tere purei anō.
 
-// @name:ml YouTube കൂടുതൽ വേഗത
-// @description:ml കൂടുതൽ പ്ലേബാക്ക് വേഗത ഒരു YouTube വീഡിയോ കീഴിൽ ബട്ടണുകൾ ചേർക്കുന്നു.
+// @name:mk YouTube со повеќе брзини (работење од 2026 година)
+// @description:mk Додава копчиња под видео на YouTube со поголема брзина на репродукција.
 
-// @name:mn YouTube-ийн илүү хурдасгана
-// @description:mn илүү тоглуулах хурд нь YouTube-ийн видеоны дор товч нэмнэ.
+// @name:ml YouTube മോർ സ്പീഡ്സ് (2026 ൽ പ്രവർത്തിക്കുന്നത്)
+// @description:ml കൂടുതൽ പ്ലേബാക്ക് വേഗതയിൽ ഒരു YouTube വീഡിയോയ്ക്ക് കീഴിൽ ബട്ടണുകൾ ചേർക്കുന്നു.
 
-// @name:mo YouTube Mai multe Vitezele
-// @description:mo Adaugă butoane sub un videoclip YouTube cu mai multe viteze de redare.
+// @name:mn YouTube-ийн илүү хурд (2026 онд ажиллаж байна)
+// @description:mn YouTube видеоны доор товчлууруудыг нэмж, илүү хурдан тоглуулна.
 
-// @name:mr YouTube अधिक गती
-// @description:mr अधिक प्लेबॅक गती YouTube व्हिडिओ अंतर्गत बटणे जोडते.
+// @name:mo YouTube More Speeds (funcțional în 2026)
+// @description:mo Adaugă butoane sub un videoclip YouTube cu viteze de redare mai mari.
 
-// @name:ms YouTube Lebih Kelajuan
+// @name:mr YouTube अधिक वेग (2026 कार्यरत)
+// @description:mr YouTube व्हिडिओच्या खाली अधिक प्लेबॅक गती देणारी बटणे जोडते.
+
+// @name:ms YouTube Lebih Banyak Kelajuan (2026 berfungsi)
 // @description:ms Menambah butang di bawah video YouTube dengan lebih kelajuan main balik.
 
-// @name:mt YouTube Veloċitajiet Aktar
-// @description:mt Iżżid buttuni taħt YouTube video ma veloċitajiet daqq aktar.
+// @name:mt YouTube Aktar Veloċitajiet (jaħdem fl-2026)
+// @description:mt Iżżid buttuni taħt vidjow ta' YouTube b'aktar veloċitajiet ta' daqq.
 
-// @name:ne YouTube मा थप गति
-// @description:ne अन्तर्गत थप प्लेब्याक गति संग YouTube भिडियो बटन थप्छ।
+// @name:ne YouTube थप गति (२०२६ काम गर्दै)
+// @description:ne थप प्लेब्याक गति भएको YouTube भिडियो मुनि बटनहरू थप्छ।
 
-// @name:nl YouTube Meer Snelheden
-// @description:nl Voegt knoppen onder een YouTube-video toe met meer afspeelsnelheden.
+// @name:nl YouTube More Speeds (2026 werkt nog steeds)
+// @description:nl Voegt knoppen toe onder een YouTube-video met verschillende afspeelsnelheden.
 
-// @name:no YouTube Flere Hastigheter
-// @description:no Legger knappene under en YouTube-video med flere avspillingshastigheter.
+// @name:no YouTube More Speeds (fungerer i 2026)
+// @description:no Legger til knapper under en YouTube-video med høyere avspillingshastigheter.
 
-// @name:ny YouTube imathamanga More
-// @description:ny Akuwonjezera mabatani pansi kanema YouTube ndi imathamanga kwambiri kubwezeretsa.
+// @name:ny Kuthamanga Kwambiri kwa YouTube (2026 ikugwira ntchito)
+// @description:ny Imawonjezera mabatani pansi pa kanema wa YouTube ndi liwiro lowonjezera losewera.
 
-// @name:or YouTube ଅଧିକ ତୀବ୍ର କରିଥାଏ
-// @description:or ଅଧିକ ପ୍ଲେବ୍ୟାକ୍ ଗତିକୁ ସହିତ ଏକ YouTube ଭିଡିଓ ଅଧୀନରେ ବଟନ ଯୋଡେ।
+// @name:or YouTube ଅଧିକ ସ୍ପିଡ୍ (୨୦୨୬ କାମ କରୁଛି)
+// @description:or ଅଧିକ ପ୍ଲେବ୍ୟାକ୍ ସ୍ପିଡ୍ ସହିତ ଏକ YouTube ଭିଡିଓ ତଳେ ବଟନ୍ ଯୋଡେ।
 
-// @name:pa YouTube 'ਹੋਰ ਗਤੀ
-// @description:pa ਹੋਰ ਪਲੇਅਬੈਕ ਸਪੀਡ ਨਾਲ ਇੱਕ ਯੂਟਿਊਬ ਵੀਡੀਓ ਦੇ ਅਧੀਨ ਬਟਨ ਨੂੰ ਜੋੜਦਾ ਹੈ.
+// @name:pa YouTube ਹੋਰ ਸਪੀਡ (2026 ਚੱਲ ਰਿਹਾ ਹੈ)
+// @description:pa ਵਧੇਰੇ ਪਲੇਬੈਕ ਸਪੀਡ ਵਾਲੇ YouTube ਵੀਡੀਓ ਦੇ ਹੇਠਾਂ ਬਟਨ ਜੋੜਦਾ ਹੈ।
 
-// @name:pl Więcej Prędkości YouTube
-// @description:pl Dodaje przyciski pod wideo YouTube z większą prędkością odtwarzania.
+// @name:pl YouTube More Speeds (działa w 2026 r.)
+// @description:pl Dodaje przyciski pod filmem YouTube, umożliwiając większą prędkość odtwarzania.
 
-// @name:ps یوټیوب نور سرعت
-// @description:ps سره نور بیاغږول سرعت یوه یوټیوب ویډیو لاندې تڼۍ زیاتوي.
+// @name:ps د یوټیوب نور سرعتونه (۲۰۲۶ کار کوي)
+// @description:ps د یوټیوب ویډیو لاندې تڼۍ اضافه کوي چې ډیر پلې بیک سرعت لري.
 
-// @name:ro YouTube Mai multe Vitezele
-// @description:ro Adaugă butoane sub un videoclip YouTube cu mai multe viteze de redare.
+// @name:ro YouTube More Speeds (funcțional în 2026)
+// @description:ro Adaugă butoane sub un videoclip YouTube cu viteze de redare mai mari.
 
-// @name:ru YouTube Больше Ускоряет
-// @description:ru Добавляет кнопки под видео на YouTube с более скоростью воспроизведения.
+// @name:ru YouTube — более высокая скорость (2026 рабочих дней)
+// @description:ru Добавляет кнопки под видео на YouTube с возможностью выбора скорости воспроизведения.
 
-// @name:rw YouTube muvuduko More
-// @description:rw Yongeraho Utubuto munsi video YouTube na muvuduko more musomyi.
+// @name:rw Umuvuduko mwinshi wa YouTube (2026 irakora)
+// @description:rw Yongeraho utubuto munsi ya videwo ya YouTube hamwe n'umuvuduko wo kuyikina.
 
-// @name:sd يوٽيوب وڌيڪ لمحو
-// @description:sd وڌيڪ playback لمحو سان هڪ يوٽيوب وڊيو هيٺ بٽڻ وڌائيندو آھي.
+// @name:sd يوٽيوب وڌيڪ اسپيڊ (2026 ڪم ڪري رهيو آهي)
+// @description:sd وڌيڪ پلے بیک اسپيڊ سان يوٽيوب وڊيو جي هيٺان بٽڻ شامل ڪري ٿو.
 
-// @name:si යූ ටියුබ් තවත් වේගය
-// @description:si වැඩි ධාවනය වේගය සමග YouTube වීඩියෝ යටතේ බොත්තම් පවසයි.
+// @name:si YouTube වැඩි වේගයන් (2026 ක්‍රියාත්මක වේ)
+// @description:si වැඩි ධාවන වේගයක් සහිත YouTube වීඩියෝවක් යටතේ බොත්තම් එක් කරයි.
 
-// @name:sk YouTube Ďalší Rýchlosti
-// @description:sk Pridá tlačidiel pod videom na YouTube s viac rýchlostí prehrávania.
+// @name:sk Vyššie rýchlosti na YouTube (v prevádzke od roku 2026)
+// @description:sk Pridá tlačidlá pod video YouTube s vyššími rýchlosťami prehrávania.
 
-// @name:sl YouTube Več Hitrosti
-// @description:sl Doda gumbe pod video YouTube z več hitrostmi predvajanja.
+// @name:sl Več hitrosti na YouTubu (deluje leta 2026)
+// @description:sl Doda gumbe pod YouTube videoposnetek z večjo hitrostjo predvajanja.
 
-// @name:sn YouTube More aimhanya
-// @description:sn Anowedzera mabhatani pasi YouTube vhidhiyo yakawanda playback aimhanya.
+// @name:sn Kumhanya Kwakawanda kweYouTube (2026 kuri kushanda)
+// @description:sn Inowedzera mabhatani pasi pevhidhiyo yeYouTube ine kumhanya kwakawanda kwekutamba.
 
-// @name:so YouTube Xawaaraha More
-// @description:so Darayaa badhamada hoos video YouTube la xawaare loo maqli dheeraad ah.
+// @name:so Xawaaraha YouTube oo Dheeraad ah (2026 shaqeynaya)
+// @description:so Waxay ku daraysaa badhamada muuqaalka YouTube-ka iyadoo leh xawaare dib u ciyaar oo dheeraad ah.
 
-// @name:sq YouTube shumë Shpejtësi
-// @description:sq Shton butonat nën një video YouTube me më shumë shpejtësi rishikim.
+// @name:sq YouTube me më shumë shpejtësi (funksionon në vitin 2026)
+// @description:sq Shton butona nën një video në YouTube me shpejtësi më të larta luajtjeje.
 
-// @name:sr ИоуТубе Море Брзине
-// @description:sr Додаје дугмад под ИоуТубе видео са више брзина репродукције.
+// @name:sr YouTube више брзина (2026. ради)
+// @description:sr Додаје дугмад испод YouTube видеа са већим брзинама репродукције.
 
-// @name:st YouTube lebelo More
-// @description:st O phaella ka ho dikonopo tlas'a video YouTube le lebelo ho feta ho bapala.
+// @name:st Mabelo a Eketsehileng a YouTube (2026 e sebetsa)
+// @description:st E eketsa dikonopo tlasa video ya YouTube ka lebelo le eketsehileng la ho bapala.
 
-// @name:su YouTube speeds More
-// @description:su Nambihan tombol di handapeun hiji video YouTube jeung speeds playback langkung.
+// @name:su YouTube Langkung Seueur Kagancangan (2026 tiasa dianggo)
+// @description:su Nambahkeun tombol di handapeun pidéo YouTube kalayan kecepatan puter anu langkung gancang.
 
-// @name:sv YouTube Fler Hastigheter
-// @description:sv Lägger knapparna under en YouTube-video med fler uppspelningshastigheter.
+// @name:sv YouTube More Speeds (fungerar 2026)
+// @description:sv Lägger till knappar under en YouTube-video med högre uppspelningshastigheter.
 
-// @name:sw YouTube Kasi Zaidi
-// @description:sw Anaongeza vifungo chini ya video za YouTube na kasi zaidi wa kucheza.
+// @name:sw Kasi Zaidi za YouTube (2026 inafanya kazi)
+// @description:sw Huongeza vitufe chini ya video ya YouTube yenye kasi zaidi ya uchezaji.
 
-// @name:ta YouTube இல் மேலும் வேகங்கள்
-// @description:ta மேலும் பின்னணி வேகம் ஒரு YouTube வீடியோ கீழ் பொத்தான்கள் சேர்க்கிறது.
+// @name:ta யூடியூபின் கூடுதல் வேகங்கள் (2026 வரை செயல்படும்)
+// @description:ta யூடியூப் வீடியோவின் கீழ், அதிக வேகத்தில் இயக்குவதற்கான பொத்தான்களைச் சேர்க்கிறது.
 
-// @name:te YouTube మరింత వేగం
-// @description:te మరింత ప్లేబ్యాక్ వేగం తో YouTube వీడియో కింద బటన్లు జోడిస్తుంది.
+// @name:te యూట్యూబ్ మరింత వేగం (2026 పనిచేస్తుంది)
+// @description:te యూట్యూబ్ వీడియో కింద అధిక ప్లేబ్యాక్ వేగాలతో కూడిన బటన్లను జోడిస్తుంది.
 
-// @name:tg YouTube суръати бештар
-// @description:tg Илова тугмаҳои зери Видео YouTube ки бо суръати бозикунии бештар.
+// @name:tg Суръатҳои бештари YouTube (корӣ дар соли 2026)
+// @description:tg Тугмаҳоро дар зери видеои YouTube бо суръати бештари бозӣ илова мекунад.
 
-// @name:th YouTube ความเร็วเพิ่มเติม
-// @description:th เพิ่มปุ่มภายใต้วิดีโอ YouTube ที่มีความเร็วในการเล่นมากขึ้น
+// @name:th YouTube More Speeds (ใช้งานได้ในปี 2026)
+// @description:th เพิ่มปุ่มปรับความเร็วในการเล่นวิดีโอ YouTube ไว้ด้านล่าง
 
-// @name:tk YouTube köp Hızları
-// @description:tk has oýnalýan ýeri tizligi bilen YouTube astynda düwmelerini goşýar.
+// @name:tk YouTube-yň has köp tizligi (2026-njy ýylda işleýär)
+// @description:tk YouTube wideosynyň aşagynda has köp oýnatma tizligi bilen düwmeleri goşýar.
 
-// @name:tl YouTube Higit pang mga Bilis
-// @description:tl Nagdadagdag ng mga pindutan sa ilalim ng isang video sa YouTube na may higit pang mga bilis ng pag-playback.
+// @name:tl Mas Maraming Bilis sa YouTube (2026 gumagana)
+// @description:tl Nagdaragdag ng mga button sa ilalim ng isang video sa YouTube na may mas mabilis na pag-playback.
 
-// @name:tr YouTube Daha Hızları
-// @description:tr Daha fazla oynatma hızı ile bir YouTube videosu altında düğmeler ekler.
+// @name:tr YouTube Daha Fazla Hız (2026'ya kadar devam ediyor)
+// @description:tr YouTube videolarının altına daha fazla oynatma hızı seçeneği sunan düğmeler ekler.
 
-// @name:tt YouTube More сцряти
-// @description:tt тагын уйнау тизлек белән YouTube видео буенча төймәсен өсти.
+// @name:tt YouTube'ның күбрәк тизлеге (2026 елда эшли)
+// @description:tt YouTube видеосы астына күбрәк уйнату тизлеге белән төймәләр өсти.
 
-// @name:ug YouTube كۆپ سۈرئىتى
-// @description:ug تېخىمۇ كۆپ قويغۇچ سۈرئىتى بىلەن YouTube غا ئاستىدا كۇنۇپكىسى قوشۇلغان.
+// @name:ug YouTube تېخىمۇ كۆپ سۈرئەت (2026-يىلى ئىشلەۋاتىدۇ)
+// @description:ug YouTube ۋىدىئوسىنىڭ ئاستىغا كۇنۇپكىلارنى قوشۇپ، قويۇش سۈرئىتىنى ئاشۇرىدۇ.
 
-// @name:uk YouTube Більше Прискорює
-// @description:uk Додає кнопки під відео на YouTube з більш швидкістю відтворення.
+// @name:uk Більше швидкості на YouTube (працює 2026)
+// @description:uk Додає кнопки під відео YouTube із більшою швидкістю відтворення.
 
-// @name:ur YouTube کو مزید رفتار
-// @description:ur زیادہ پلے بیک رفتار کے ساتھ ایک YouTube ویڈیو کے نیچے بٹن جوڑتا ہے.
+// @name:ur YouTube مزید رفتار (2026 کام کر رہا ہے)
+// @description:ur زیادہ پلے بیک کی رفتار کے ساتھ YouTube ویڈیو کے نیچے بٹن شامل کرتا ہے۔
 
-// @name:uz YouTube ko'proq Tezligi
-// @description:uz ko'proq ijro etish, tezlik bilan YouTube video ostida tugmalari qo'shadi.
+// @name:uz YouTube'ning ko'proq tezligi (2026-yilda ishlaydi)
+// @description:uz YouTube videosi ostiga ko'proq ijro tezligi bilan tugmalar qo'shadi.
 
-// @name:vi YouTube More Tốc độ
-// @description:vi Thêm nút dưới một video với tốc độ phát lại hơn YouTube.
+// @name:vi YouTube với tốc độ nhanh hơn (hoạt động tốt năm 2026)
+// @description:vi Thêm các nút bên dưới video YouTube với nhiều tốc độ phát lại hơn.
 
-// @name:xh YouTube ngesantya More
-// @description:xh amaqhosha Wongeza phantsi YouTube ividiyo kunye ngezantya ngaphezulu ukudlalwa.
+// @name:xh Isantya Esingakumbi seYouTube (iyasebenza ngo-2026)
+// @description:xh Yongeza amaqhosha phantsi kwevidiyo yeYouTube ngesantya sokudlala esongezelelekileyo.
 
-// @name:yi יאָוטובע מער ספּעעדס
-// @description:yi מוסיף קנעפּלעך אונטער אַ יאָוטובע ווידעא מיט מער פּלייבאַק ספּידז.
+// @name:yi יוטוב מער ספידס (2026 ארבעט)
+// @description:yi לייגט צו קנעפלעך אונטער א יוטוב ווידעא מיט מער ווידערשפּיל גיכקייטן.
 
-// @name:yo YouTube Die iyara
-// @description:yo Afikun awọn bọtini labẹ a YouTube fidio pẹlu diẹ sẹhin iyara.
+// @name:yo Awọn iyara diẹ sii YouTube (2026 n ṣiṣẹ)
+// @description:yo Fi awọn bọtini kun labẹ fidio YouTube pẹlu awọn iyara ṣiṣiṣẹsẹhin diẹ sii.
 
-// @name:zh YouTube上的更多速度
-// @description:zh 添加下一个YouTube视频与更多的播放速度按钮。
+// @name:zh YouTube 更多速度（2026 年可用）
+// @description:zh 在 YouTube 视频下方添加按钮，可选择不同的播放速度。
 
-// @name:zu Ngesivinini-YouTube angeziwe
-// @description:zu Yengeza izinkinobho ngaphansi kwevidiyo ye-YouTube nge ngaphezulu ukudlala ngesivinini.
+// @name:zu Isivinini Esikhulu se-YouTube (sisebenza ngo-2026)
+// @description:zu Ingeza izinkinobho ngaphansi kwevidiyo ye-YouTube ngesivinini sokudlala esengeziwe.
 
 // @namespace    https://github.com/ssssssander
 // @icon https://www.youtube.com/s/desktop/3748dff5/img/favicon_48.png
